@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparación Tecnológica</title>
+    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">TechSolutions</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+              </li>              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="servicios.html">Reparación de Hardware</a></li>
+                  <li><a class="dropdown-item" href="servicios.html">Reparación de Software</a></li>                  
+                  <li><a class="dropdown-item" href="servicios.html">Mantenimiento preventivo</a></li>
+                  <li><a class="dropdown-item" href="servicios.html">Reparación a domicilio</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</header>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Servicio de Reparación</title>
+    <link rel="stylesheet" href="servicios.css"> <!-- Nombre específico para este formulario -->
+</head>
+<body>
+    <div class="servicios-container"> <!-- Clase única -->
+        <h1 class="servicios-title">Solicitud de Servicio</h1>
+        <form id="servicioForm" class="servicios-form"> <!-- Clase única -->
+            
+            <div class="servicios-input-group"> <!-- Clase única -->
+                <label for="servicioNombre" class="servicios-label">Nombre:</label>
+                <input type="text" id="servicioNombre" class="servicios-input" required>
+            </div>
+            
+            <div class="servicios-input-group">
+                <label for="servicioEmail" class="servicios-label">Correo Electrónico:</label>
+                <input type="email" id="servicioEmail" class="servicios-input" required>
+            </div>
+            
+            <div class="servicios-input-group">
+                <label for="servicioTelefono" class="servicios-label">Teléfono:</label>
+                <input type="tel" id="servicioTelefono" class="servicios-input" required>
+            </div>
+            
+            <div class="servicios-input-group">
+                <label for="servicioTipo" class="servicios-label">Tipo de Servicio:</label>
+                <select id="servicioTipo" class="servicios-select" required>
+                    <option value="">Seleccione...</option>
+                    <option value="hardware">Reparación de Hardware</option>
+                    <option value="software">Reparación de Software</option>
+                    <option value="mantenimiento">Mantenimiento Preventivo</option>
+                    <option value="domicilio">Reparación a Domicilio</option>
+                </select>
+            </div>
+            
+            <div class="servicios-input-group">
+                <label for="servicioDescripcion" class="servicios-label">Descripción del Problema:</label>
+                <textarea id="servicioDescripcion" class="servicios-textarea" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit" class="servicios-submit">Enviar Solicitud</button>
+        </form>
+    </div>
+    
+    <script src="servicios.js"></script> <!-- Nombre específico -->
+</body>
+</html>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
